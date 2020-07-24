@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for list_view in list_page %}
+    <p> {{ list_view.gcontext }},{{ list_view.gtitle }},<img src="/static/{{ list_view.gpic }}"></p>
+    {% endfor %}
+</body>
+</html>

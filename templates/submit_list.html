@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+ <form action="/yc_create/" enctype="multipart/form-data" method="post">
+     {% csrf_token %}
+    title:<br>
+     <input type="text" name="title" id="title">
+     <br>
+     context:<br>
+     <input type="text" name="context" id="context">
+     <br>
+     <br>
+     <input type="file" name="pic" id="pic"><br>
+     <br><br>
+     <input type="submit" value="注册">
+ </form>
+ <p>提交的测试界面</p>
+</body>
+</html>
